@@ -56,3 +56,24 @@ button:hover{ /*Cuando el cursor esta encima del boton realiza una acción*/
 	border: 2px solid #C44900;
 	box-shadow: 0 0 15px #C44900;/*Crea una sombra exterior del boton de 15 pixeles*/
 }
+
+/*Responsivo*/
+@media (max-width: 600px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	input {
+		width: 100%;
+		max-width: 300px;
+		padding: 10px 20px;
+		font-size: 1rem;
+	}
+
+	button {
+		width: 100%;
+		max-width: 200px;
+		font-size: 1rem;
+		padding: 10px 20px;
+	}
+}
