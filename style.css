@@ -1,0 +1,58 @@
+*{
+	padding: 0; /*todos lo elementos tengan el padding en 0*/
+	margin: 0; /*todos los elementos tengan el margen en 0*/
+	box-sizing: border-box;/*para ordenar los elementos mas fácil*/
+	font-family: serif; /*tipografia*/
+}
+
+body{
+	background-color: #04151F; /*color de fondo*/
+	display: flex; /**/
+	justify-content: center; /*Centrar elementos horizontalmente*/
+	align-items: center; /*Centrar elementos verticalmente*/
+	height: 100vh; /*altura de referencia es el 100% de la pantalla*/	
+	flex-direction: column; /*Ordenar los elemntos en columnas*/
+}
+
+div{
+	display: flex;
+	flex-direction: row; /*alinear los elementos en renglon*/
+	gap: 10px; /*Espacio entre elemntos de 10 pixeles*/
+	margin-bottom: 20px;
+}
+
+h1{
+	color: #EFD6AC;
+	font-size: 50px;
+	margin-bottom: 30px; /*Espacio de abajo del h1*/
+	margin-top: 30px;
+}
+
+input{
+	margin: 10px; /*margen en todas las direcciones*/
+	font-size: 20px;
+	padding: 20px 40px; /*(arriba y abajo), (derecha e izquierda)*/
+	color: #EFD6AC;
+	font-weight: bold; /*Poner las letras en negritas*/
+	background-color: #183A37;
+}
+
+button{
+	width: 180px; 
+	font-size: 20px;
+	background-color: #04151F;
+	color: #EFD6AC;
+	border: 2px solid #EFD6AC;
+	border-radius: 30px; /*redondear el boton*/
+	padding: 20px 40px; /*(arrriba y abajo),(derecha e izquierda)*/
+	margin-top: 20px; /*Espacio debajo del elemento*/
+	cursor: pointer; /*Hacer que el diseño del cursor cambie al colocarlo encima del boton*/
+	transition: .4s ease; /*transision de la animación [ease: define la velocidad del cambio]*/
+}
+
+button:hover{ /*Cuando el cursor esta encima del boton realiza una acción*/
+	transition: .4s ease; /*transision de 0.4 segundos que suaviza la aceleración*/
+	color: #C44900; /*cambia el color de la letra y del borde del boton a amarillo*/
+	border: 2px solid #C44900;
+	box-shadow: 0 0 15px #C44900;/*Crea una sombra exterior del boton de 15 pixeles*/
+}
